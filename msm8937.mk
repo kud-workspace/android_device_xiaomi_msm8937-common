@@ -409,7 +409,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \
     libcld80211 \
-    libqsap_sdk \
     libQWiFiSoftApCfg \
     libwifi-hal-qcom \
     libwpa_client \
