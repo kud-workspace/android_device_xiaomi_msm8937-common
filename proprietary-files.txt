@@ -707,7 +707,7 @@ vendor/lib64/vendor.qti.imsrtpservice@2.1-service-Impl.so
 vendor/lib64/vendor.qti.imsrtpservice@2.1.so
 
 # Radio TC - from cmi
-system_ext/framework/qti-telephony-common.jar|dbed34315fa8745bd22f758d1173924bf3cdfa9c
+system_ext/framework/qti-telephony-common.jar|6fab39f3bb691c64fb56bc1b9244f517c470bb5c
 
 # Sensors
 vendor/bin/sensors.qti
