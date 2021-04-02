@@ -244,7 +244,7 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.lights-service.xiaomi_msm8953
+    android.hardware.lights-service.xiaomi_msm8937
 
 # LiveDisplay
 PRODUCT_PACKAGES += \
@@ -287,7 +287,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml
 
 # Properties
--include device/xiaomi/msm8953-common/prop.mk
+-include device/xiaomi/msm8937-common/prop.mk
 
 # QMI
 PRODUCT_PACKAGES += \
@@ -413,4 +413,4 @@ PRODUCT_BOOT_JARS += \
     WfdCommon
 
 # Inherit the proprietary files
-$(call inherit-product, vendor/xiaomi/msm8953-common/msm8953-common-vendor.mk)
+$(call inherit-product, vendor/xiaomi/msm8937-common/msm8937-common-vendor.mk)
