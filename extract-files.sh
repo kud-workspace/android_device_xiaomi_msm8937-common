@@ -66,6 +66,8 @@ function blob_fixup() {
         vendor/lib64/libsettings.so)
             "${PATCHELF}" --replace-needed "libprotobuf-cpp-full.so" "libprotobuf-cpp-full-v29.so" "${2}"
             ;;
+	lib/libwfdmmsink.so)
+            "${PATCHELF}" --add-needed "libshim_wfdmmsink.so" "${2}"
     esac
 }
 
