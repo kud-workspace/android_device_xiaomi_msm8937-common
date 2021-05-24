@@ -367,17 +367,22 @@ vendor/lib/libsdm-diag.so|46b5c2d6fab1e655efde1657b2e51dc00c00b763
 vendor/lib/libsdmextension.so|5d4f365e0f9cae77e51deab70ea27114ea57389b
 vendor/lib/libtinyxml2_1.so|ef2167416f7a5a503256c5e818fcfa660d5146f4
 
-# Adreno 308 Graphics firmware - from ASUS X00PD QKQ1.191002.002.WW_Phone-17.00.2003.23-20200401
-vendor/firmware/a300_pfp.fw
-vendor/firmware/a300_pm4.fw
-
-# Graphics firmware - from daisy
-vendor/firmware/a506_zap.b00|c45a7b34456844f5deb73e2dce79cbfcfb9ae71c
-vendor/firmware/a506_zap.b01|00a618f9ecde71e169200fbdc60428c81bab144c
-vendor/firmware/a506_zap.b02|b79957c47f0a6757ac1d721dbe06551508454634
-vendor/firmware/a506_zap.mdt|2945f21b47cf35bf22d8cb68e937c34ea64212c0
-vendor/firmware/a530_pfp.fw|448f9db8271fefb08348cbc50409e8e95bd93f78
-vendor/firmware/a530_pm4.fw|5741a28752355b478d455635bab008028ff7e1c6
+# Graphics firmware - from Xiaomi/olive/olive:10/QKQ1.191014.001/V12.0.2.0.QCNMIXM:user/release-keys
+vendor/firmware/a300_pfp.fw|899dbfad4812084971cfc1ff30f06a4b45c2d34c
+vendor/firmware/a300_pm4.fw|94529206b45b6e9f6ed30dadabe4244a88a60975
+vendor/firmware/a506_zap.b00|21d74ee137e4096c2ffcd6f2545b5b2f8f384efa
+vendor/firmware/a506_zap.b01|d87237a4f52c9394872058f28700ade18835033c
+vendor/firmware/a506_zap.b02|3e301fa5905acd05f15836959595791c1241a017
+vendor/firmware/a506_zap.elf|c4bf11b5a48826d6acf7f572b5afd0c56284234a
+vendor/firmware/a506_zap.mdt|ea1053e5af9918044df81fa373b5ef0f4c823f45
+vendor/firmware/a530_gpmu.fw2|706da8d5ee565dcf456341f805ee75a40773f65a
+vendor/firmware/a530_pfp.fw|d027c70fde64241ec13160d09ee1b6c272974a4b
+vendor/firmware/a530_pm4.fw|b1cf625b5552b99839687f479c124ac5daca2ca2
+vendor/firmware/a530v1_pfp.fw|0864291b99bed712edfcffa94be7b4595d3af306
+vendor/firmware/a530v1_pm4.fw|6a82a4fb4035fa2a933c1a26b5535d7ec7c0ac4c
+vendor/firmware/a530v2_seq.fw2|63b6d25594a5c1f4217d996a2b636e17a29fc840
+vendor/firmware/a530v3_gpmu.fw2|0a2f6f450231673d75ba39e5d28776db3becf810
+vendor/firmware/a530v3_seq.fw2|8963a53acc689725dee4b22881a4dd4b80e5def8
 
 # Ipacm - from daisy
 vendor/bin/ipacm-diag|9300f8da22941c2bfacc2ff96f83f2beebd4dcc1
