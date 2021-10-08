@@ -420,6 +420,7 @@ PRODUCT_COPY_FILES += \
 
 # ROM: RevengeOS
 ifneq ($(wildcard vendor/revengeos),)
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-revengeos
 TARGET_BOOT_ANIMATION_RES := 720
 endif
 
