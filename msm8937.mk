@@ -170,8 +170,7 @@ PRODUCT_PACKAGES += \
     libdisplayconfig \
     liboverlay \
     libqdMetaData.system \
-    libgenlock \
-    libtinyxml
+    libgenlock
 
 # DPM
 PRODUCT_PACKAGES += \
@@ -348,7 +347,6 @@ PRODUCT_PACKAGES += \
 
 # RIL
 PRODUCT_PACKAGES += \
-    librmnetctl \
     libcnefeatureconfig \
     libxml2
 
