@@ -183,5 +183,11 @@ void load_mods()
 {
     /* Workaround CTS */
     workaround_cts_properties();
+
+    // ADB
+    property_override("ro.secure", "0");
+    property_override("ro.adb.secure", "0");
+    property_override("ro.debuggable", "1");
+    property_override("persist.sys.usb.config", "adb");
 }
 #endif
