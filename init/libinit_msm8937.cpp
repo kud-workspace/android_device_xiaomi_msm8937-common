@@ -190,6 +190,13 @@ static const char *build_keys_props[] =
     nullptr
 };
 
+static const char *sp_date_props[] =
+{
+//  "ro.build.version.security_patch",
+    "ro.vendor.build.security_patch",
+    nullptr
+};
+
 void load_mods()
 {
     /* Workaround CTS */
@@ -203,6 +210,11 @@ void load_mods()
     /* Spoof Build keys */
 	for (int i = 0; build_keys_props[i]; ++i) {
 		property_override(build_keys_props[i], "release-keys");
+	}
+
+    /* Spoof Security Patch Date */
+	for (int i = 0; sp_date_props[i]; ++i) {
+		property_override(sp_date_props[i], "2021-10-05");
 	}
 }
 #endif

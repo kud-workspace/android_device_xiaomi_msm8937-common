@@ -11,6 +11,7 @@ allow init sysfs_leds:lnk_file r_file_perms;
 
 # Prop
 get_prop(init, vendor_xiaomi_prop)
+set_prop(init, vendor_security_patch_level_prop)
 
 # Allow init bind mounting vendor files
 allow init vendor_file:file mounton;
