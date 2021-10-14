@@ -1,4 +1,5 @@
 # All unpinned blobs below are extracted from daisy-user 10 QKQ1.191002.002 V11.0.21.0.QDLMIXM release-keys
+# Panther Package version: Nokia/Panther_00WW/PAN_sprout:11/RKQ1.200928.002/00WW_3_150:user/release-keys
 # cmi Package version: cmi-qssi-user-11-RKQ1.200710.002-V12.1.2.0.RJACNXM-release-keys
 # olive Package version: Xiaomi/olive/olive:10/QKQ1.191014.001/V12.5.1.0.QCNCNXM:user/release-keys
 # riva Package version: Xiaomi/riva/riva:8.1.0/OPM1.171019.026/V11.0.2.0.OCKMIXM:user/release-keys
@@ -76,29 +77,33 @@ vendor/lib64/soundfx/libasphere.so
 # ANT+ (vendor)
 vendor/lib64/com.qualcomm.qti.ant@1.0.so
 
-# Bluetooth
+# Bluetooth - from Panther
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
 vendor/lib64/libbt-hidlclient.so
 vendor/lib64/libbtnv.so
 
-# Bluetooth (shared dependencies)
+# Bluetooth (shared dependencies) - from Panther
 vendor/lib64/vendor.qti.hardware.fm@1.0.so
 
-# Bluetooth Audio
+# Bluetooth Audio - from Panther
 vendor/lib/hw/audio.bluetooth_qti.default.so
 vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
-vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so
+vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so
 vendor/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
+vendor/lib/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so
 vendor/lib/libbluetooth_audio_session_qti.so
 vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so
+vendor/lib/vendor.qti.hardware.bluetooth_sar@1.1.so
 vendor/lib64/hw/audio.bluetooth_qti.default.so
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
-vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so
+vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so
 vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
+vendor/lib64/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so
 vendor/lib64/libbluetooth_audio_session_qti.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
+vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
 
 # Camera libts - from riva
 -vendor/lib/libts_detected_face_hal.so
