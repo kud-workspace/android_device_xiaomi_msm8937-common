@@ -101,6 +101,9 @@ vendor.gralloc.enable_fb_ubwc=1
 # DRM
 drm.service.enabled=true
 
+# eBPF
+ro.kernel.ebpf.supported=false
+
 # Fingerprint
 persist.qfp=false
 
