@@ -338,7 +338,7 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
     SystemUI
 
 # Speed profile services and wifi-service to reduce RAM and storage
-ifneq ($(DEVICE),tiare)
+ifeq ($(filter tiare riva,$(DEVICE)),)
 PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
 endif
 PRODUCT_USE_PROFILE_FOR_BOOT_IMAGE := true

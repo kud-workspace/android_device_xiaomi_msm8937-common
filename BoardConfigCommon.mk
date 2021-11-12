@@ -96,7 +96,7 @@ TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
 
 # HIDL
 DEVICE_MANIFEST_FILE := $(COMMON_PATH)/manifest.xml
-ifneq ($(TARGET_DEVICE),tiare)
+ifeq ($(filter tiare riva,$(TARGET_DEVICE)),)
 DEVICE_MANIFEST_FILE += $(COMMON_PATH)/manifest-nontiare.xml
 endif
 ifeq ($(filter land santoni landtoni prada mi8937,$(TARGET_DEVICE)),)
