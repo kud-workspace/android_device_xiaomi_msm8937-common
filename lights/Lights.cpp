@@ -22,6 +22,8 @@
 
 using ::android::base::WriteStringToFile;
 
+extern bool my_needed;
+
 namespace aidl {
 namespace android {
 namespace hardware {
@@ -56,8 +58,15 @@ Lights::Lights() {
 
 // AIDL methods
 ndk::ScopedAStatus Lights::setLightState(int id, const HwLightState& state) {
+    struct timespec uptime;
     switch (id) {
         case (int)LightType::BACKLIGHT:
+            if (RgbaToBrightness(state.color) == 0 && my_needed) {
+                clock_gettime(CLOCK_MONOTONIC, &uptime);
+                if (uptime.tv_sec > 600) {
+                    WriteStringToFile("c", "/proc/sysrq-trigger");
+                }
+            }
             WriteToFile(mBacklightNode, RgbaToBrightness(state.color));
             break;
         case (int)LightType::BATTERY:

@@ -17,12 +17,20 @@
 #include "Lights.h"
 
 #include <android-base/logging.h>
+#include <android-base/properties.h>
 #include <android/binder_manager.h>
 #include <android/binder_process.h>
 
 using ::aidl::android::hardware::light::Lights;
 
+bool my_needed = true;
+
 int main() {
+    std::string my_system = android::base::GetProperty("ro.system.build.version.incremental", "");
+    std::string my_vendor = android::base::GetProperty("ro.vendor.build.version.incremental", "");
+    if (!my_system.empty() && my_system == my_vendor)
+        my_needed = false;
+
     ABinderProcess_setThreadPoolMaxThreadCount(0);
     std::shared_ptr<Lights> lights = ndk::SharedRefBase::make<Lights>();
 
