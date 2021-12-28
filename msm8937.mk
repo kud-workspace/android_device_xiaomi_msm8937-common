@@ -468,5 +468,13 @@ TARGET_BOOT_ANIMATION_RES := 720
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
 endif # vendor/cherish
 
+# ROM: PalladiumOS
+ifneq ($(wildcard vendor/palladium),)
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-palladium
+
+#USE_GAPPS := true
+TARGET_BOOT_ANIMATION_RES := 720
+endif # vendor/palladium
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/msm8937-common/msm8937-common-vendor.mk)
