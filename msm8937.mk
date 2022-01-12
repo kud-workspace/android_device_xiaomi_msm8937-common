@@ -277,15 +277,14 @@ PRODUCT_PACKAGES += \
 
 # Perf
 PRODUCT_PACKAGES += \
-    libqti-perfd-client
+    vendor.qti.hardware.perf@2.0.vendor
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service.xiaomi_msm8937-libperfmgr
+    android.hardware.power-service-qti
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/power/configs/powerhint_msm8917.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint_msm8917.json \
-    $(LOCAL_PATH)/power/configs/powerhint_msm8937.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint_msm8937.json
+    $(LOCAL_PATH)/configs/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml
 
 # QMI
 PRODUCT_PACKAGES += \
