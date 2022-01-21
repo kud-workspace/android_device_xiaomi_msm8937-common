@@ -80,6 +80,9 @@ TARGET_TS_MAKEUP := true
 
 TARGET_SUPPORT_HAL1 := false
 
+# FIXME: Dexpreopt, a little too big
+WITH_DEXPREOPT_BOOT_IMG_AND_SYSTEM_SERVER_ONLY := true
+
 # Display
 TARGET_USES_ION := true
 TARGET_USES_GRALLOC1 := true
